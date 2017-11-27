@@ -1,4 +1,6 @@
 <?php
 defined('_JEXEC') or die;
-
-?><span class="icon-eye">
+require(__DIR__.'./../../administrator/components/com_cpquicklinks/cpquicklinks_api.php');
+print_r(getQuickLinks());
+exit();
+?>
