@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata>
+    <layout title="CP Quick Links Page">
+        <message>The default page for displaying the CP Quick Links</message>
+    </layout>
+	<config>
+		<fields name="params">
+			<fieldset name="request">
+				<field
+					name="pagetitle"
+					type="text"
+					label="Page Title"
+					description="A page title that is shown above the quick links (Blank = no title shown)"
+					placehoder="CP Quick Links"
+					default=""
+				/>
+				<field
+					name="customcss"
+					type="textarea"
+					label="Custom CSS"
+					description="Inject custom CSS into the Quick Links"
+					default=""
+				/>
+			</fieldset>
+		</fields>
+    </config>
+</metadata>

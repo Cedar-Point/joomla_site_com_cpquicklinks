@@ -1,5 +1,4 @@
 #cpquicklinks {
-	font-family:Verdana;
 	columns:200px;
 }
 #cpquicklinks .category {
@@ -15,22 +14,15 @@
 }
 #cpquicklinks .category .name {
 	font-size:18px;
-	font-weight:lighter;
-	color:#444444;
 }
 #cpquicklinks .category .fa {
 	font-size:24px;
 	margin-right:6px;
 	vertical-align:-1px;
-	color:#444444;
 }
 #cpquicklinks a {
 	display:block;
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
-	color:#0a7ead;
-}
-#cpquicklinks a:hover {
-	color:black;
 }
