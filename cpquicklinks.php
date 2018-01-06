@@ -27,13 +27,21 @@ if((!isset($_GET['option']) || $_GET['option'] !== 'com_cpquicklinks') && !empty
 				<span class="fa '.$cat['icon'].'"></span><span class="name">'.$catname.'</span>
 				<div>
 		';
-		foreach($cat['links'] as $linkname => $link) {
+		foreach($cat['links'] as $linknamedesc => $link) {
 			$pop = 'target="_top"';
 			if($link['popout']) {
 				$pop = 'target="_blank"';
 			}
+			$lnda = explode(';', $linknamedesc);
+			if(count($lnda) == 1) {
+				$linkname = $lnda[0];
+				$linkdesc = $lnda[0];
+			} else {
+				$linkname = $lnda[0];
+				$linkdesc = $lnda[1];
+			}
 			echo '
-					<a title="'.$linkname.'" href="'.$link['href'].'" '.$pop.'>'.$linkname.'</a>
+					<a title="'.$linkdesc.'" href="'.$link['href'].'" '.$pop.'>'.$linkname.'</a>
 			';
 		}
 		echo '
